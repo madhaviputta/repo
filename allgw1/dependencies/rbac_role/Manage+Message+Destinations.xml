@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Role xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="0000000000000000fffffffffffffd76" version="0">
+    <l7:name>Manage Message Destinations</l7:name>
+    <l7:description>Users assigned to the {0} role have the ability to read, create, update and delete message destinations.</l7:description>
+    <l7:userCreated>false</l7:userCreated>
+    <l7:assignments/>
+</l7:Role>

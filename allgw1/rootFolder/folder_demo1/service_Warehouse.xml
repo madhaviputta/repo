@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Service xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="5578cf460fe81a56cbe577e96ae26233" version="2">
+    <l7:ServiceDetail folderId="c98186926d7ca0cf4b95b48866e84b8e" id="5578cf460fe81a56cbe577e96ae26233" version="2">
+        <l7:Name>Warehouse</l7:Name>
+        <l7:Enabled>true</l7:Enabled>
+        <l7:ServiceMappings>
+            <l7:HttpMapping>
+                <l7:UrlPattern>/soap/testing</l7:UrlPattern>
+                <l7:Verbs>
+                    <l7:Verb>POST</l7:Verb>
+                </l7:Verbs>
+            </l7:HttpMapping>
+            <l7:SoapMapping>
+                <l7:Lax>false</l7:Lax>
+            </l7:SoapMapping>
+        </l7:ServiceMappings>
+        <l7:Properties>
+            <l7:Property key="internal">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="policyRevision">
+                <l7:LongValue>1</l7:LongValue>
+            </l7:Property>
+            <l7:Property key="soap">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="soapVersion">
+                <l7:StringValue>1.1</l7:StringValue>
+            </l7:Property>
+            <l7:Property key="tracingEnabled">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="wssProcessingEnabled">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:ServiceDetail>
+    <l7:Resources>
+        <l7:ResourceSet tag="policy">
+            <l7:Resource type="policy" version="0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:HttpRoutingAssertion&gt;
+            &lt;L7p:ProtectedServiceUrl stringValue="http://localhost:7070/ACMEWarehouse/services/WarehouseSoap"/&gt;
+            &lt;L7p:RequestHeaderRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="Cookie"/&gt;
+                    &lt;/L7p:item&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="SOAPAction"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Rules&gt;
+            &lt;/L7p:RequestHeaderRules&gt;
+            &lt;L7p:RequestParamRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="true"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"/&gt;
+            &lt;/L7p:RequestParamRules&gt;
+            &lt;L7p:ResponseHeaderRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="Set-Cookie"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Rules&gt;
+            &lt;/L7p:ResponseHeaderRules&gt;
+        &lt;/L7p:HttpRoutingAssertion&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+        </l7:ResourceSet>
+        <l7:ResourceSet rootUrl="file:/C:/Users/vvanigalla/Desktop/dump/ACMEWarehouse.wsdl" tag="wsdl">
+            <l7:Resource sourceUrl="file:/C:/Users/vvanigalla/Desktop/dump/ACMEWarehouse.wsdl" type="wsdl">&lt;wsdl:definitions targetNamespace="http://warehouse.acme.com/ws" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://warehouse.acme.com/ws" xmlns:intf="http://warehouse.acme.com/ws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;wsdl:types&gt;
+                &lt;schema elementFormDefault="qualified" targetNamespace="http://warehouse.acme.com/ws" xmlns="http://www.w3.org/2001/XMLSchema"&gt;
+                        &lt;element name="listProducts"&gt;
+                                &lt;complexType&gt;
+                                        &lt;sequence&gt;
+                                                &lt;element name="delay" type="xsd:int"/&gt;
+                                        &lt;/sequence&gt;
+                                &lt;/complexType&gt;
+                        &lt;/element&gt;
+                        &lt;element name="listProductsResponse"&gt;
+                                &lt;complexType&gt;
+                                        &lt;sequence&gt;
+                                                &lt;element maxOccurs="unbounded" name="listProductsResult" type="impl:listProductsResultArray"/&gt;
+                                        &lt;/sequence&gt;
+                                &lt;/complexType&gt;
+                        &lt;/element&gt;
+                        &lt;complexType name="listProductsResultArray"&gt;
+                                &lt;sequence&gt;
+                                        &lt;element maxOccurs="unbounded" name="listProductsResult" type="impl:ProductListHeader"/&gt;
+                                &lt;/sequence&gt;
+                        &lt;/complexType&gt;
+                        &lt;complexType name="ProductListHeader"&gt;
+                                &lt;sequence&gt;
+                                        &lt;element maxOccurs="1" minOccurs="0" name="productName" type="xsd:string"/&gt;
+                                        &lt;element name="productId" type="xsd:long"/&gt;
+                                &lt;/sequence&gt;
+                        &lt;/complexType&gt;
+                        &lt;element name="getProductDetails"&gt;
+                                &lt;complexType&gt;
+                                        &lt;sequence&gt;
+                                                &lt;element name="productid" type="xsd:long"/&gt;
+                                                &lt;element name="delay" type="xsd:int"/&gt;
+                                        &lt;/sequence&gt;
+                                &lt;/complexType&gt;
+                        &lt;/element&gt;
+                        &lt;element name="getProductDetailsResponse"&gt;
+                                &lt;complexType&gt;
+                                        &lt;sequence&gt;
+                                                &lt;element name="getProductDetailsResult" type="impl:ProductDetails"/&gt;
+                                        &lt;/sequence&gt;
+                                &lt;/complexType&gt;
+                        &lt;/element&gt;
+                        &lt;complexType name="ProductDetails"&gt;
+                                &lt;complexContent&gt;
+                                        &lt;extension base="impl:ProductListHeader"&gt;
+                                                &lt;sequence&gt;
+                                                        &lt;element maxOccurs="1" minOccurs="0" name="description" type="xsd:string"/&gt;
+                                                        &lt;element name="price" type="xsd:float"/&gt;
+                                                        &lt;element name="inStock" type="xsd:boolean"/&gt;
+                                                &lt;/sequence&gt;
+                                        &lt;/extension&gt;
+                                &lt;/complexContent&gt;
+                        &lt;/complexType&gt;
+                        &lt;element name="placeOrder"&gt;
+                                &lt;complexType&gt;
+                                        &lt;sequence&gt;
+                                                &lt;element name="productid" type="xsd:long"/&gt;
+                                                &lt;element name="amount" type="xsd:long"/&gt;
+                                                &lt;element name="price" type="xsd:float"/&gt;
+                                                &lt;element name="accountid" type="xsd:long"/&gt;
+                                                &lt;element name="delay" type="xsd:int"/&gt;
+                                        &lt;/sequence&gt;
+                                &lt;/complexType&gt;
+                        &lt;/element&gt;
+                        &lt;element name="placeOrderResponse"&gt;
+                                &lt;complexType&gt;
+                                        &lt;sequence&gt;
+                                                &lt;element name="placeOrderResult" type="xsd:long"/&gt;
+                                        &lt;/sequence&gt;
+                                &lt;/complexType&gt;
+                        &lt;/element&gt;
+                        &lt;element name="currentOrders"&gt;
+                                &lt;complexType&gt;
+                                        &lt;sequence&gt;
+                                                &lt;element name="accountid" type="xsd:long"/&gt;
+                                                &lt;element name="delay" type="xsd:int"/&gt;
+                                        &lt;/sequence&gt;
+                                &lt;/complexType&gt;
+                        &lt;/element&gt;
+                        &lt;element name="currentOrdersResponse"&gt;
+                                &lt;complexType&gt;
+                                        &lt;sequence&gt;
+                                                &lt;element maxOccurs="unbounded" name="currentOrdersResult" type="impl:Order"/&gt;
+                                        &lt;/sequence&gt;
+                                &lt;/complexType&gt;
+                        &lt;/element&gt;
+                        &lt;complexType name="Order"&gt;
+                                &lt;sequence&gt;
+                                        &lt;element name="date" type="xsd:dateTime"/&gt;
+                                        &lt;element name="accountId" type="xsd:long"/&gt;
+                                        &lt;element name="productId" type="xsd:long"/&gt;
+                                        &lt;element name="amount" type="xsd:long"/&gt;
+                                        &lt;element name="price" type="xsd:float"/&gt;
+                                        &lt;element name="confirmationId" type="xsd:long"/&gt;
+                                &lt;/sequence&gt;
+                        &lt;/complexType&gt;
+                &lt;/schema&gt;
+        &lt;/wsdl:types&gt;
+
+        &lt;wsdl:message name="listProductsResponse"&gt;
+
+                &lt;wsdl:part element="impl:listProductsResponse" name="parameters"/&gt;
+
+        &lt;/wsdl:message&gt;
+
+        &lt;wsdl:message name="currentOrdersRequest"&gt;
+
+                &lt;wsdl:part element="impl:currentOrders" name="parameters"/&gt;
+
+        &lt;/wsdl:message&gt;
+
+        &lt;wsdl:message name="listProductsRequest"&gt;
+
+                &lt;wsdl:part element="impl:listProducts" name="parameters"/&gt;
+
+        &lt;/wsdl:message&gt;
+
+        &lt;wsdl:message name="currentOrdersResponse"&gt;
+
+                &lt;wsdl:part element="impl:currentOrdersResponse" name="parameters"/&gt;
+
+        &lt;/wsdl:message&gt;
+
+        &lt;wsdl:message name="placeOrderResponse"&gt;
+
+                &lt;wsdl:part element="impl:placeOrderResponse" name="parameters"/&gt;
+
+        &lt;/wsdl:message&gt;
+
+        &lt;wsdl:message name="getProductDetailsResponse"&gt;
+
+                &lt;wsdl:part element="impl:getProductDetailsResponse" name="parameters"/&gt;
+
+        &lt;/wsdl:message&gt;
+
+        &lt;wsdl:message name="getProductDetailsRequest"&gt;
+
+                &lt;wsdl:part element="impl:getProductDetails" name="parameters"/&gt;
+
+        &lt;/wsdl:message&gt;
+
+        &lt;wsdl:message name="placeOrderRequest"&gt;
+
+                &lt;wsdl:part element="impl:placeOrder" name="parameters"/&gt;
+
+        &lt;/wsdl:message&gt;
+
+        &lt;wsdl:portType name="WarehouseSoap"&gt;
+
+                &lt;wsdl:operation name="listProducts"&gt;
+
+                        &lt;wsdl:input message="impl:listProductsRequest" name="listProductsRequest"/&gt;
+
+                        &lt;wsdl:output message="impl:listProductsResponse" name="listProductsResponse"/&gt;
+
+                &lt;/wsdl:operation&gt;
+
+                &lt;wsdl:operation name="getProductDetails"&gt;
+
+                        &lt;wsdl:input message="impl:getProductDetailsRequest" name="getProductDetailsRequest"/&gt;
+
+                        &lt;wsdl:output message="impl:getProductDetailsResponse" name="getProductDetailsResponse"/&gt;
+
+                &lt;/wsdl:operation&gt;
+
+                &lt;wsdl:operation name="placeOrder"&gt;
+
+                        &lt;wsdl:input message="impl:placeOrderRequest" name="placeOrderRequest"/&gt;
+
+                        &lt;wsdl:output message="impl:placeOrderResponse" name="placeOrderResponse"/&gt;
+
+                &lt;/wsdl:operation&gt;
+
+                &lt;wsdl:operation name="currentOrders"&gt;
+
+                        &lt;wsdl:input message="impl:currentOrdersRequest" name="currentOrdersRequest"/&gt;
+
+                        &lt;wsdl:output message="impl:currentOrdersResponse" name="currentOrdersResponse"/&gt;
+
+                &lt;/wsdl:operation&gt;
+
+        &lt;/wsdl:portType&gt;
+
+        &lt;wsdl:binding name="WarehouseSoapSoapBinding" type="impl:WarehouseSoap"&gt;
+
+                &lt;wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/&gt;
+
+                &lt;wsdl:operation name="listProducts"&gt;
+
+                        &lt;wsdlsoap:operation soapAction="http://warehouse.acme.com/ws/listProducts"/&gt;
+
+                        &lt;wsdl:input name="listProductsRequest"&gt;
+
+                                &lt;wsdlsoap:body use="literal"/&gt;
+
+                        &lt;/wsdl:input&gt;
+
+                        &lt;wsdl:output name="listProductsResponse"&gt;
+
+                                &lt;wsdlsoap:body use="literal"/&gt;
+
+                        &lt;/wsdl:output&gt;
+
+                &lt;/wsdl:operation&gt;
+
+                &lt;wsdl:operation name="getProductDetails"&gt;
+
+                        &lt;wsdlsoap:operation soapAction="http://warehouse.acme.com/ws/getProductDetails"/&gt;
+
+                        &lt;wsdl:input name="getProductDetailsRequest"&gt;
+
+                                &lt;wsdlsoap:body use="literal"/&gt;
+
+                        &lt;/wsdl:input&gt;
+
+                        &lt;wsdl:output name="getProductDetailsResponse"&gt;
+
+                                &lt;wsdlsoap:body use="literal"/&gt;
+
+                        &lt;/wsdl:output&gt;
+
+                &lt;/wsdl:operation&gt;
+
+                &lt;wsdl:operation name="placeOrder"&gt;
+
+                        &lt;wsdlsoap:operation soapAction="http://warehouse.acme.com/ws/placeOrder"/&gt;
+
+                        &lt;wsdl:input name="placeOrderRequest"&gt;
+
+                                &lt;wsdlsoap:body use="literal"/&gt;
+
+                        &lt;/wsdl:input&gt;
+
+                        &lt;wsdl:output name="placeOrderResponse"&gt;
+
+                                &lt;wsdlsoap:body use="literal"/&gt;
+
+                        &lt;/wsdl:output&gt;
+
+                &lt;/wsdl:operation&gt;
+
+                &lt;wsdl:operation name="currentOrders"&gt;
+
+                        &lt;wsdlsoap:operation soapAction="http://warehouse.acme.com/ws/currentOrders"/&gt;
+
+                        &lt;wsdl:input name="currentOrdersRequest"&gt;
+
+                                &lt;wsdlsoap:body use="literal"/&gt;
+
+                        &lt;/wsdl:input&gt;
+
+                        &lt;wsdl:output name="currentOrdersResponse"&gt;
+
+                                &lt;wsdlsoap:body use="literal"/&gt;
+
+                        &lt;/wsdl:output&gt;
+
+                &lt;/wsdl:operation&gt;
+
+        &lt;/wsdl:binding&gt;
+
+        &lt;wsdl:service name="Warehouse"&gt;
+
+                &lt;wsdl:port binding="impl:WarehouseSoapSoapBinding" name="WarehouseSoap"&gt;
+
+                        &lt;wsdlsoap:address location="http://localhost:7070/ACMEWarehouse/services/WarehouseSoap"/&gt;
+
+                &lt;/wsdl:port&gt;
+
+        &lt;/wsdl:service&gt;
+
+&lt;/wsdl:definitions&gt;</l7:Resource>
+        </l7:ResourceSet>
+    </l7:Resources>
+</l7:Service>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Role xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="0000000000000000fffffffffffffe70" version="1">
+    <l7:name>Manage Webservices</l7:name>
+    <l7:description>Users assigned to the {0} role have the ability to publish new services and edit existing ones.</l7:description>
+    <l7:userCreated>false</l7:userCreated>
+    <l7:assignments/>
+</l7:Role>

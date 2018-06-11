@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:PrivateKey xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" alias="gmu" id="00000000000000000000000000000002:gmu" keystoreId="00000000000000000000000000000002">
+    <l7:CertificateChain>
+        <l7:CertificateData>
+            <l7:IssuerName>CN%3Dgmu</l7:IssuerName>
+            <l7:SerialNumber>13103888565329970341</l7:SerialNumber>
+            <l7:SubjectName>CN%3Dgmu</l7:SubjectName>
+            <l7:Encoded>MIIC4TCCAcmgAwIBAgIJALXaXTkIy8SlMA0GCSqGSIb3DQEBDAUAMA4xDDAKBgNVBAMTA2dtdTAeFw0xODA2MTEwODQxNDlaFw0yMzA2MTAwODQxNDlaMA4xDDAKBgNVBAMTA2dtdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIYJFWakVvS9orKSaarrfDgBFQJkDoXC1ODUdt89xP/DFd13e+a0YDiZMF26asR9xA/QQ+fyGMj3T6d1dsg0OdS017X74uyDWUV8aTlld+CY4kVPvKB1tXOaDaIH+gHQhsb3K1DsSSrMI9Hb9y+6CB0oEzx8e951AaCzOzv7KPW9r+ANVCdH4IcIyxi2efXMoOklaygikdDdjZDJC8CGD33KS7r0AP68brPB75aKoQuTkaiup0Xv96EGWuhq2KdE1v/5bNVk3PBsDBd2ZvQ20AA75h6RUNySYNZvN5i7nppCtApHE+DXnS1gfn96Riz1iHwCM/HjA3pkJbDOQGP4e7MCAwEAAaNCMEAwHQYDVR0OBBYEFAaL7b5uSpyKj63cYLoeNdEHot2aMB8GA1UdIwQYMBaAFAaL7b5uSpyKj63cYLoeNdEHot2aMA0GCSqGSIb3DQEBDAUAA4IBAQAq+deJSqBnMO6I4I6kkB0tiGJiHCWLqFetFZqFbWB+WYQ7DnmvvveE/ohKxotJDs0a7nnYfmVGuH7zVtxKbLvB5HGnNzBypJILu6KDRL1brEsKfidWuUiRkZu/x1q/Eda4KtshEX3SkQwUw5VxFmEG80+lybuFV2tATF9SM5xpV57yAXdk611cYAEl/kT0xmWZOMVwugR5xijcSubTjHWIh4wZs+EErp6zLp1yyUvD5stykpBkrxeg3vQlN0byhKu79ApX7psvd9hDnGBDz7Ou6cc/eNSVULqD+pbuhCcDuJtHe69QMNH43o8vtCK4+0no6CkN5h2Bttyh6Yjar1Bq</l7:Encoded>
+        </l7:CertificateData>
+    </l7:CertificateChain>
+    <l7:Properties>
+        <l7:Property key="keyAlgorithm">
+            <l7:StringValue>RSA</l7:StringValue>
+        </l7:Property>
+        <l7:Property key="keyData">
+            <l7:StringValue algorithm="RSA" bundleKey="$L7C2$1bead,kBiBH2MKAxxxFeYVsO3GMmqJUaYO2nfIleLBnJE8uv0=$cHKq8wPxEcJUCs1luWJoVXxA9O1AaOxEvJfxp0LsWxTHKaYmS5pkQCFpyoerbFq1bYXklaZBjLFZ+1pwswPrpoZ3OsWdG+3JJjNFVUpm4YWGWQRuiyi4OhzI8g10CFwU">$L7C2$1,qjlrdhYdMaaZp+vgYS/EpTRBvkL0/6Fqm7rX7sYPOxU=$j5H77D4uio1iOtq5cOMx4gHGj3HWVfmIaStpc75PhTCmXEgJ6DADsrwpcdPICGj3uP28f+v9+YUYnlppZV01Ld7Zof0jErVPRhymqgX9v2JptsboQ4Js9ElJLzLw7tXC66kUoMPCY579BDwJV5hSdwo84jSdSsiVhRikbsjKqdY5v1v53POa1zMtlY5Yr67O9RUxKr4ARXrdXdRcfK5HuYL88X4895wt0Y6UVyRkzNHmcddWbu5WGhGP96nJ/kIoKcjx2hsAm8EAggoCxWazWmXWiatxV/338lo5Br6gXk5b54TU0ZtAwKMx8Qv1U0AVzx9hHdjEas8jiYEFN2pw/7uXe37YvELvkLzYzAgErMkBychhsurypSUJ5+CrG05RAiixQrwMes4vfAJWmK/bQoVYIINJ8EUf3r1zsJSOzJsKyEEUB/P0VOWeWIf+Oe1l3QyibEgCRag2W52AMU00jGAKd5ijjvp6HfAjaudcvAdU5r4gCugJeWSAKVdyEa9Xrmqu5IGVuI1ErU+fLdgr+yVfG88a1CfBjFBdMeg98gU/FqRWJq3vcWHiFVjiGjG++5XLdITxFmlTH9OUpv5kRqU7bOagiw4yCwx2pbnA4EiGX/nydWWeIca6Fhu2jyPDC5Rzj6gsjuMwROz0d6mVc35KPbFo4AhWkyod79D7sdijnoTmtM/akvzKSVGAiP987+Yme+d93hM0BJ5I0LD0s1zedK3UZDEeN3G20b7MXGWhKmnodS1KGRRrOiGs9icjZ2W/TxDSLqtFhZgHvE+GwmTsezO1xRhz3FEUpOIN4IOfR44PdPrOqxTdYGPqB8pZ+p11S8K/nwKhArr36ekF0TB+KDoGv2Tg9d0QLoMY5x+VOrcrR5pR8QlmKiB7VUhz3G9yEz3JdZ3cwesECKTyyPMYyNUkZwzjImO6OUngLe39qM8dQFZFqIDysZ5vJR7mUB16R4JnffUH/HvRZdFRkUE0svQGCNzt75foyWPMT03UGE5jaNunR8piAhFOx6MATEWQ66fiZQJJMB5tiPTxZ8xCeCBF352CKtkGxt5AjZNvQwlVhCpuVa7+sf7+CAlcpfD5UKDwFsNkfE/HMqJErfDJ4HRfrmvyp1WRKf0yqMqijzLrJAEEfB6FdwcsOCv/tXSgbQJpDXHySmlAFdq+9+icX4DRQQZyb3UOBkCEGDmG/Thd4WRhQrjkLdmlPvJvrtQmBDMetBilplwHSPfe3qjUV9a38U4OP9Z6QDt/MtxuTI9VtHmor/8KQJGQ7SSQJQInOKfe0a4Ubt01BssaHODlSS/v19W6nGxTbwvLaJ5+cAt3ddtUotrOFeK8FtyaWR/cx5SPb26hFUVSkLfze/A10CNgxjSaOkE/+P8ICcSjwJNzyFf1DknmlAaQgqzvPrUprZKb0okF6y9Ercw+zMyshIfhEuG31bsjMF3uqaHPPfPfCCzMqmrwoowEh65lougpYLoVGuOGAnJSfYQ0PcelGWkWVlgTT0OGDjTSE6ovacHGsviPUttkp9xQc3or1iNSymaGOqIWU71DyVFdJHu6r6y+OmeLwsYxgn6EgQb65S9SYeGHiz014W8PQn816PSA0xPXbt409YvTcfuKrRetrkxBJZBUZy7tKHXwZQ7Tf81R02zMsRrI8uCmJl+t7lX4LZ2XhK8LeYdKzQ81Anxw6oNKighWVETr9p3sfxE=</l7:StringValue>
+        </l7:Property>
+    </l7:Properties>
+</l7:PrivateKey>

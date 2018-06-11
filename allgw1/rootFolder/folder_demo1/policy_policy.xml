@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Policy xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" guid="2e164b64-c4ac-4d25-9969-1ec7c0ace9a8" id="2d22d0a934d4737dc8fd42441e5ac0b8" version="1">
+    <l7:PolicyDetail folderId="c98186926d7ca0cf4b95b48866e84b8e" guid="2e164b64-c4ac-4d25-9969-1ec7c0ace9a8" id="2d22d0a934d4737dc8fd42441e5ac0b8" version="1">
+        <l7:Name>policy</l7:Name>
+        <l7:PolicyType>Identity Provider</l7:PolicyType>
+        <l7:Properties>
+            <l7:Property key="revision">
+                <l7:LongValue>2</l7:LongValue>
+            </l7:Property>
+            <l7:Property key="soap">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="tag">
+                <l7:StringValue>password-auth</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:PolicyDetail>
+    <l7:Resources>
+        <l7:ResourceSet tag="policy">
+            <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="Policy Fragment: policy"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:HttpBasic/&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+        </l7:ResourceSet>
+    </l7:Resources>
+</l7:Policy>

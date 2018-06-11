@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:TrustedCertificate xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="893dff433c28ac3e5cf466258934691f" version="0">
+    <l7:Name>l7.gateway.com</l7:Name>
+    <l7:CertificateData>
+        <l7:IssuerName>CN%3Dl7.gateway.com</l7:IssuerName>
+        <l7:SerialNumber>6491555234406771923</l7:SerialNumber>
+        <l7:SubjectName>CN%3Dl7.gateway.com</l7:SubjectName>
+        <l7:Encoded>MIIC9jCCAd6gAwIBAgIIWhajF4qkrNMwDQYJKoZIhvcNAQEMBQAwGTEXMBUGA1UEAxMObDcuZ2F0ZXdheS5jb20wHhcNMTgwNTI2MDMxNTAwWhcNMjgwNTIzMDMxNTAwWjAZMRcwFQYDVQQDEw5sNy5nYXRld2F5LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI4Di2bMqnPuOH0HMx4MVVzjgy/ml4zNpIDVBplL4t4v09vfcQP2OGte6vwg3KPZchPS6yKZzcvKRLa7GXVbd68+jCO3fg8zHM3M6OnxPfgeXDCIvVHmhbO+JR2xw+jrNJJR43Jgo+aMtTOcWpaeVz6GTmBx3P8Cc6eB0V/jm/RonXuzrVE03iMTxVZCJYDyd++C4+V0NEVnWaRQW3MD2xJSx2Dval4iuXx6mOqWcF0675ENUmjWyR9pRpia8DvKkSw6x15F/S0iOgDhXK9jvbaX56Yhw2Dyl8UDKz36XIYObANkOLk2jKNK3joHbh8E00/lgiWR4B06dbhN5EYSmacCAwEAAaNCMEAwHQYDVR0OBBYEFE1ltBa0yjCpbZwvjUBcynS9VEOSMB8GA1UdIwQYMBaAFE1ltBa0yjCpbZwvjUBcynS9VEOSMA0GCSqGSIb3DQEBDAUAA4IBAQAlhhQxCC9Pni3BjrR4vr3xPIQsfB1A0O7Uqyum3obJcuYx5WhWEn1ernwZdriGPoWz1lmEnS6dwu8HoXHGZ22glVbmvb8rYpVzALe1HUeIh7+G5unEhtnmfZbz4zLLogp2+uaYIaSyZEjYgc7HUSMWlzrgIX4njtjoc0OirxdboyOo8+eOitW3zSuy4EnPIMwfavQ5aK7nBimBFse7T9+MD7/BOZ2fHiVHrFv8ONcPuP42l195Mx8DyW0QMpbhqEGsaezEAxrghWopMxjofLqq9J7JvYnpTsQMulcZI951KMZDkN6MtJQLe0NWJU8swppK9d03n4wKjxwajR6jfX8V</l7:Encoded>
+    </l7:CertificateData>
+    <l7:Properties>
+        <l7:Property key="revocationCheckingEnabled">
+            <l7:BooleanValue>true</l7:BooleanValue>
+        </l7:Property>
+        <l7:Property key="trustAnchor">
+            <l7:BooleanValue>true</l7:BooleanValue>
+        </l7:Property>
+        <l7:Property key="trustedAsSamlAttestingEntity">
+            <l7:BooleanValue>false</l7:BooleanValue>
+        </l7:Property>
+        <l7:Property key="trustedAsSamlIssuer">
+            <l7:BooleanValue>false</l7:BooleanValue>
+        </l7:Property>
+        <l7:Property key="trustedForSigningClientCerts">
+            <l7:BooleanValue>true</l7:BooleanValue>
+        </l7:Property>
+        <l7:Property key="trustedForSigningServerCerts">
+            <l7:BooleanValue>true</l7:BooleanValue>
+        </l7:Property>
+        <l7:Property key="trustedForSsl">
+            <l7:BooleanValue>true</l7:BooleanValue>
+        </l7:Property>
+        <l7:Property key="verifyHostname">
+            <l7:BooleanValue>false</l7:BooleanValue>
+        </l7:Property>
+    </l7:Properties>
+</l7:TrustedCertificate>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Role xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="0000000000000000fffffffffffffcae" version="2">
+    <l7:name>Gateway Maintenance</l7:name>
+    <l7:description>Users assigned to the {0} role have the ability to perform Gateway maintenance tasks.</l7:description>
+    <l7:userCreated>false</l7:userCreated>
+    <l7:assignments>
+        <l7:assignment id="2e2f297bbe863eac2b2459b287fdb5f6">
+            <l7:providerId>0000000000000000fffffffffffffffe</l7:providerId>
+            <l7:identityId>2e2f297bbe863eac2b2459b287fdb5a2</l7:identityId>
+            <l7:entityType>User</l7:entityType>
+        </l7:assignment>
+        <l7:assignment id="ea23a7e1740f7b040ae2ae3b8e7b49ba">
+            <l7:providerId>0000000000000000fffffffffffffffe</l7:providerId>
+            <l7:identityId>ea23a7e1740f7b040ae2ae3b8e7b49b3</l7:identityId>
+            <l7:entityType>User</l7:entityType>
+        </l7:assignment>
+    </l7:assignments>
+</l7:Role>

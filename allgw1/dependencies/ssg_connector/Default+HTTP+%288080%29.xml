@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:ListenPort xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="2e2f297bbe863eac2b2459b287fd4da5" version="0">
+    <l7:Name>Default HTTP (8080)</l7:Name>
+    <l7:Enabled>true</l7:Enabled>
+    <l7:Protocol>HTTP</l7:Protocol>
+    <l7:Port>8080</l7:Port>
+    <l7:EnabledFeatures>
+        <l7:StringValue>Published service message input</l7:StringValue>
+        <l7:StringValue>Policy download service</l7:StringValue>
+        <l7:StringValue>Ping service</l7:StringValue>
+        <l7:StringValue>WS-Trust security token service</l7:StringValue>
+        <l7:StringValue>WSDL download service</l7:StringValue>
+        <l7:StringValue>SNMP Query service</l7:StringValue>
+    </l7:EnabledFeatures>
+</l7:ListenPort>

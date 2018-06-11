@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Role xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="0000000000000000fffffffffffffbb4" version="1">
+    <l7:name>Manage Private Keys</l7:name>
+    <l7:description>Users in this role have the ability to read, create, update, and delete private keys, as well as the ability to change the designated special-purpose keys (eg, the SSL or CA key).</l7:description>
+    <l7:userCreated>false</l7:userCreated>
+    <l7:assignments/>
+</l7:Role>

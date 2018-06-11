@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:ListenPort xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="35bd5279223b58ea7aa3d0f496eddb89" version="0">
+    <l7:Name>4444 port</l7:Name>
+    <l7:Enabled>true</l7:Enabled>
+    <l7:Protocol>HTTPS</l7:Protocol>
+    <l7:Port>4444</l7:Port>
+    <l7:EnabledFeatures>
+        <l7:StringValue>Published service message input</l7:StringValue>
+        <l7:StringValue>Policy Manager access</l7:StringValue>
+        <l7:StringValue>Browser-based administration</l7:StringValue>
+        <l7:StringValue>Built-in services</l7:StringValue>
+        <l7:StringValue>Node Control</l7:StringValue>
+        <l7:StringValue>Inter-Node Communication</l7:StringValue>
+    </l7:EnabledFeatures>
+    <l7:TlsSettings>
+        <l7:ClientAuthentication>None</l7:ClientAuthentication>
+        <l7:EnabledVersions>
+            <l7:StringValue>TLSv1</l7:StringValue>
+            <l7:StringValue>TLSv1.1</l7:StringValue>
+            <l7:StringValue>TLSv1.2</l7:StringValue>
+        </l7:EnabledVersions>
+        <l7:Properties>
+            <l7:Property key="usesTLS">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:TlsSettings>
+    <l7:Properties>
+        <l7:Property key="useExtendedFtpCommandSet">
+            <l7:StringValue>false</l7:StringValue>
+        </l7:Property>
+    </l7:Properties>
+</l7:ListenPort>

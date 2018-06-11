@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:JDBCConnection xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="2e2f297bbe863eac2b2459b287fd7ffa" version="0">
+    <l7:Name>OAuth</l7:Name>
+    <l7:Enabled>true</l7:Enabled>
+    <l7:Properties>
+        <l7:Property key="maximumPoolSize">
+            <l7:IntegerValue>15</l7:IntegerValue>
+        </l7:Property>
+        <l7:Property key="minimumPoolSize">
+            <l7:IntegerValue>3</l7:IntegerValue>
+        </l7:Property>
+    </l7:Properties>
+    <l7:Extension>
+        <l7:DriverClass>com.mysql.jdbc.Driver</l7:DriverClass>
+        <l7:JdbcUrl>jdbc:mysql://l7.gateway.com:3306/otk_db</l7:JdbcUrl>
+        <l7:ConnectionProperties>
+            <l7:Property key="EnableCancelTimeout">
+                <l7:StringValue>true</l7:StringValue>
+            </l7:Property>
+            <l7:Property key="password">
+                <l7:StringValue bundleKey="$L7C2$1bead,kBiBH2MKAxxxFeYVsO3GMmqJUaYO2nfIleLBnJE8uv0=$cHKq8wPxEcJUCs1luWJoVXxA9O1AaOxEvJfxp0LsWxTHKaYmS5pkQCFpyoerbFq1bYXklaZBjLFZ+1pwswPrpoZ3OsWdG+3JJjNFVUpm4YWGWQRuiyi4OhzI8g10CFwU">$L7C2$1,qkzME7ea7uNJEZ0WDI3Tr3HBisy0rpDLu4nz68X/UUM=$bXxm0aJC7ii0ulREPXa+y6WgG1XSL4xYfIazLXrXQFUUvjlZEHyXFTazw6qrsLcpI2BFggsD/Wf5eOFLrpGavw==</l7:StringValue>
+            </l7:Property>
+            <l7:Property key="user">
+                <l7:StringValue>root</l7:StringValue>
+            </l7:Property>
+        </l7:ConnectionProperties>
+    </l7:Extension>
+</l7:JDBCConnection>

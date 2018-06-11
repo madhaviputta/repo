@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Role xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="2d22d0a934d4737dc8fd42441e5ac06c" version="0">
+    <l7:name>Manage gateway Identity Provider (#2d22d0a934d4737dc8fd42441e5ac06a)</l7:name>
+    <l7:description>Users assigned to the {0} role have the ability to read, update and delete the {1} provider, and create, search, update and delete its users and groups.</l7:description>
+    <l7:userCreated>false</l7:userCreated>
+    <l7:assignments/>
+    <l7:entityType>ID_PROVIDER_CONFIG</l7:entityType>
+    <l7:entityID>2d22d0a934d4737dc8fd42441e5ac06a</l7:entityID>
+</l7:Role>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:LogSink xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="0000000000000000fffffffffffffcd6" version="0">
+    <l7:Name>ssg</l7:Name>
+    <l7:Description>Main log</l7:Description>
+    <l7:Type>FILE</l7:Type>
+    <l7:Categories>
+        <l7:Category>AUDIT</l7:Category>
+        <l7:Category>LOG</l7:Category>
+    </l7:Categories>
+    <l7:Enabled>true</l7:Enabled>
+    <l7:Severity>INFO</l7:Severity>
+    <l7:SyslogHosts/>
+    <l7:Filters/>
+    <l7:Properties>
+        <l7:Property key="file.format">
+            <l7:StringValue>STANDARD</l7:StringValue>
+        </l7:Property>
+        <l7:Property key="file.logCount">
+            <l7:StringValue>10</l7:StringValue>
+        </l7:Property>
+        <l7:Property key="file.maxSize">
+            <l7:StringValue>20000</l7:StringValue>
+        </l7:Property>
+    </l7:Properties>
+</l7:LogSink>

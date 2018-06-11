@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:AuditConfiguration xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:AlwaysSaveInternal>true</l7:AlwaysSaveInternal>
+</l7:AuditConfiguration>

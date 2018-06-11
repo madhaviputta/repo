@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:InterfaceTag xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="742a7604-699c-368a-a19a-0ddd73085575">
+    <l7:Name>loopback</l7:Name>
+    <l7:AddressPatterns>
+        <l7:StringValue>127.0.0.1</l7:StringValue>
+    </l7:AddressPatterns>
+</l7:InterfaceTag>

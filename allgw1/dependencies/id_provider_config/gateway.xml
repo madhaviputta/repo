@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:IdentityProvider xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="2d22d0a934d4737dc8fd42441e5ac06a" version="0">
+    <l7:Name>gateway</l7:Name>
+    <l7:IdentityProviderType>Federated</l7:IdentityProviderType>
+    <l7:Properties>
+        <l7:Property key="certificateValidation">
+            <l7:StringValue>Validate Certificate Path</l7:StringValue>
+        </l7:Property>
+        <l7:Property key="enableCredentialType.saml">
+            <l7:BooleanValue>false</l7:BooleanValue>
+        </l7:Property>
+        <l7:Property key="enableCredentialType.x509">
+            <l7:BooleanValue>true</l7:BooleanValue>
+        </l7:Property>
+    </l7:Properties>
+</l7:IdentityProvider>

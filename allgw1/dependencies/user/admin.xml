@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:User xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="00000000000000000000000000000003" providerId="0000000000000000fffffffffffffffe">
+    <l7:Login>admin</l7:Login>
+    <l7:Password bundleKey="$L7C2$1bead,kBiBH2MKAxxxFeYVsO3GMmqJUaYO2nfIleLBnJE8uv0=$cHKq8wPxEcJUCs1luWJoVXxA9O1AaOxEvJfxp0LsWxTHKaYmS5pkQCFpyoerbFq1bYXklaZBjLFZ+1pwswPrpoZ3OsWdG+3JJjNFVUpm4YWGWQRuiyi4OhzI8g10CFwU" format="bundleKey:sha512crypt">$L7C2$1,nSaiNuSZU/GpwCoLp5u6ob+7A1eRqayJc6vbXekFAyQ=$fuwpWlTtoxcxtkiKiKlWYjAtU5eyAQIJ24Eyo44EKWOG4ILfWA+aWH3BfBmLmwcPWftAqFiIKNpLxVoej3LByiOB4hM5DiDeXBr9ItkUtIlBYTA51MN0AqdYqVEGmcHUjYKmcLnGKlbD/mL9J31HXRE+wufviq232AJy4JJUoaV8rviJDgawClEQgdoCmE7QRooBu3ioozFMGK/0SjVu9w==</l7:Password>
+    <l7:FirstName/>
+    <l7:LastName/>
+    <l7:Email/>
+    <l7:Properties>
+        <l7:Property key="accountExpiration">
+            <l7:LongValue>-1</l7:LongValue>
+        </l7:Property>
+        <l7:Property key="enabled">
+            <l7:BooleanValue>true</l7:BooleanValue>
+        </l7:Property>
+        <l7:Property key="name">
+            <l7:StringValue>admin</l7:StringValue>
+        </l7:Property>
+    </l7:Properties>
+</l7:User>
