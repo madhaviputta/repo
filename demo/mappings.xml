@@ -12,4 +12,13 @@
     <l7:Mapping action="NewOrExisting" srcId="1c716730fcee2abfc1077f3b098ec2f9" srcUri="https://l7.gateway.com:8443/restman/1.0/services/1c716730fcee2abfc1077f3b098ec2f9" type="SERVICE"/>
     <l7:Mapping action="NewOrExisting" srcId="af28960f3a4211bdfbc5539d3307e5e0" srcUri="https://l7.gateway.com:8443/restman/1.0/services/af28960f3a4211bdfbc5539d3307e5e0" type="SERVICE"/>
     <l7:Mapping action="NewOrExisting" srcId="af28960f3a4211bdfbc5539d3307e635" srcUri="https://l7.gateway.com:8443/restman/1.0/services/af28960f3a4211bdfbc5539d3307e635" type="SERVICE"/>
+    <l7:Mapping action="NewOrExisting" srcId="0000000000000000fffffffffffffffe" srcUri="https://l7.gateway.com:8443/restman/1.0/identityProviders/0000000000000000fffffffffffffffe" type="ID_PROVIDER_CONFIG">
+        <l7:Properties>
+            <l7:Property key="FailOnNew">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="5b99043b565d27a068acb55715fa090c" srcUri="https://l7.gateway.com:8443/restman/1.0/identityProviders/0000000000000000fffffffffffffffe/users/5b99043b565d27a068acb55715fa090c" type="USER"/>
+    <l7:Mapping action="NewOrExisting" srcId="ea97cdd0bde7dc6a9977ff5d536aee9e" srcUri="https://l7.gateway.com:8443/restman/1.0/services/ea97cdd0bde7dc6a9977ff5d536aee9e" type="SERVICE"/>
 </l7:Mappings>

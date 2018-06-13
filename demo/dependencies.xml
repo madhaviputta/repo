@@ -21,6 +21,11 @@
                     <l7:Id>af28960f3a4211bdfbc5539d3307e635</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
                 </l7:Dependency>
+                <l7:Dependency>
+                    <l7:Name>iamtest</l7:Name>
+                    <l7:Id>ea97cdd0bde7dc6a9977ff5d536aee9e</l7:Id>
+                    <l7:Type>SERVICE</l7:Type>
+                </l7:Dependency>
             </l7:Dependencies>
         </l7:Dependency>
         <l7:Dependency>
@@ -61,6 +66,33 @@
                     <l7:Name>SSL</l7:Name>
                     <l7:Id>00000000000000000000000000000002:SSL</l7:Id>
                     <l7:Type>SSG_KEY_ENTRY</l7:Type>
+                </l7:Dependency>
+            </l7:Dependencies>
+        </l7:Dependency>
+        <l7:Dependency>
+            <l7:Name>Internal Identity Provider</l7:Name>
+            <l7:Id>0000000000000000fffffffffffffffe</l7:Id>
+            <l7:Type>ID_PROVIDER_CONFIG</l7:Type>
+        </l7:Dependency>
+        <l7:Dependency>
+            <l7:Name>gmu</l7:Name>
+            <l7:Id>5b99043b565d27a068acb55715fa090c</l7:Id>
+            <l7:Type>USER</l7:Type>
+        </l7:Dependency>
+        <l7:Dependency>
+            <l7:Name>iamtest</l7:Name>
+            <l7:Id>ea97cdd0bde7dc6a9977ff5d536aee9e</l7:Id>
+            <l7:Type>SERVICE</l7:Type>
+            <l7:Dependencies>
+                <l7:Dependency>
+                    <l7:Name>Internal Identity Provider</l7:Name>
+                    <l7:Id>0000000000000000fffffffffffffffe</l7:Id>
+                    <l7:Type>ID_PROVIDER_CONFIG</l7:Type>
+                </l7:Dependency>
+                <l7:Dependency>
+                    <l7:Name>gmu</l7:Name>
+                    <l7:Id>5b99043b565d27a068acb55715fa090c</l7:Id>
+                    <l7:Type>USER</l7:Type>
                 </l7:Dependency>
             </l7:Dependencies>
         </l7:Dependency>
