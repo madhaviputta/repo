@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Mappings xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://l7.gateway.com:8443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
+        <l7:Properties>
+            <l7:Property key="FailOnNew">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="6ddfb96be189150be49e8f9ed1ee6095" srcUri="https://l7.gateway.com:8443/restman/1.0/folders/6ddfb96be189150be49e8f9ed1ee6095" type="FOLDER"/>
+    <l7:Mapping action="NewOrExisting" srcId="00000000000000000000000000000002:SSL" srcUri="https://l7.gateway.com:8443/restman/1.0/privateKeys/00000000000000000000000000000002:SSL" type="SSG_KEY_ENTRY"/>
+    <l7:Mapping action="NewOrExisting" srcId="1c716730fcee2abfc1077f3b098ec2f9" srcUri="https://l7.gateway.com:8443/restman/1.0/services/1c716730fcee2abfc1077f3b098ec2f9" type="SERVICE"/>
+    <l7:Mapping action="NewOrExisting" srcId="af28960f3a4211bdfbc5539d3307e5e0" srcUri="https://l7.gateway.com:8443/restman/1.0/services/af28960f3a4211bdfbc5539d3307e5e0" type="SERVICE"/>
+    <l7:Mapping action="NewOrExisting" srcId="af28960f3a4211bdfbc5539d3307e635" srcUri="https://l7.gateway.com:8443/restman/1.0/services/af28960f3a4211bdfbc5539d3307e635" type="SERVICE"/>
+</l7:Mappings>
