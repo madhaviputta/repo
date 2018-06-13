@@ -19,6 +19,6 @@
             </l7:Property>
         </l7:Properties>
     </l7:Mapping>
-    <l7:Mapping action="NewOrExisting" srcId="5b99043b565d27a068acb55715fa090c" srcUri="https://l7.gateway.com:8443/restman/1.0/identityProviders/0000000000000000fffffffffffffffe/users/5b99043b565d27a068acb55715fa090c" type="USER"/>
+    <l7:Mapping action="NewOrExisting" srcId="ea23a7e1740f7b040ae2ae3b8e7b49b3" srcUri="https://l7.gateway.com:8443/restman/1.0/identityProviders/0000000000000000fffffffffffffffe/users/ea23a7e1740f7b040ae2ae3b8e7b49b3" type="USER"/>
     <l7:Mapping action="NewOrExisting" srcId="ea97cdd0bde7dc6a9977ff5d536aee9e" srcUri="https://l7.gateway.com:8443/restman/1.0/services/ea97cdd0bde7dc6a9977ff5d536aee9e" type="SERVICE"/>
 </l7:Mappings>

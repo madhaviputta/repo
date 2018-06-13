@@ -75,8 +75,8 @@
             <l7:Type>ID_PROVIDER_CONFIG</l7:Type>
         </l7:Dependency>
         <l7:Dependency>
-            <l7:Name>gmu</l7:Name>
-            <l7:Id>5b99043b565d27a068acb55715fa090c</l7:Id>
+            <l7:Name>user01</l7:Name>
+            <l7:Id>ea23a7e1740f7b040ae2ae3b8e7b49b3</l7:Id>
             <l7:Type>USER</l7:Type>
         </l7:Dependency>
         <l7:Dependency>
@@ -90,8 +90,8 @@
                     <l7:Type>ID_PROVIDER_CONFIG</l7:Type>
                 </l7:Dependency>
                 <l7:Dependency>
-                    <l7:Name>gmu</l7:Name>
-                    <l7:Id>5b99043b565d27a068acb55715fa090c</l7:Id>
+                    <l7:Name>user01</l7:Name>
+                    <l7:Id>ea23a7e1740f7b040ae2ae3b8e7b49b3</l7:Id>
                     <l7:Type>USER</l7:Type>
                 </l7:Dependency>
             </l7:Dependencies>
