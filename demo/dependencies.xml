@@ -12,6 +12,11 @@
                     <l7:Type>SERVICE</l7:Type>
                 </l7:Dependency>
                 <l7:Dependency>
+                    <l7:Name>abc</l7:Name>
+                    <l7:Id>7a15bd7b9e57a719afc6b1119aec6d2c</l7:Id>
+                    <l7:Type>SERVICE</l7:Type>
+                </l7:Dependency>
+                <l7:Dependency>
                     <l7:Name>Warehouse</l7:Name>
                     <l7:Id>af28960f3a4211bdfbc5539d3307e5e0</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
@@ -44,6 +49,11 @@
                     <l7:Type>SSG_KEY_ENTRY</l7:Type>
                 </l7:Dependency>
             </l7:Dependencies>
+        </l7:Dependency>
+        <l7:Dependency>
+            <l7:Name>abc</l7:Name>
+            <l7:Id>7a15bd7b9e57a719afc6b1119aec6d2c</l7:Id>
+            <l7:Type>SERVICE</l7:Type>
         </l7:Dependency>
         <l7:Dependency>
             <l7:Name>Warehouse</l7:Name>
