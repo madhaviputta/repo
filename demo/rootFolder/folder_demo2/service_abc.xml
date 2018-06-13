@@ -19,7 +19,7 @@
                 <l7:BooleanValue>false</l7:BooleanValue>
             </l7:Property>
             <l7:Property key="policyRevision">
-                <l7:LongValue>1</l7:LongValue>
+                <l7:LongValue>2</l7:LongValue>
             </l7:Property>
             <l7:Property key="soap">
                 <l7:BooleanValue>false</l7:BooleanValue>
@@ -34,9 +34,14 @@
     </l7:ServiceDetail>
     <l7:Resources>
         <l7:ResourceSet tag="policy">
-            <l7:Resource type="policy" version="0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+            <l7:Resource type="policy" version="1">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
-    &lt;wsp:All wsp:Usage="Required"/&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHtnYXRld2F5Lm5hbWV9"/&gt;
+            &lt;L7p:VariableToSet stringValue="names"/&gt;
+        &lt;/L7p:SetVariable&gt;
+    &lt;/wsp:All&gt;
 &lt;/wsp:Policy&gt;
 </l7:Resource>
         </l7:ResourceSet>

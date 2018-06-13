@@ -51,9 +51,21 @@
             </l7:Dependencies>
         </l7:Dependency>
         <l7:Dependency>
+            <l7:Name>name</l7:Name>
+            <l7:Id>7a15bd7b9e57a719afc6b1119aec6eb1</l7:Id>
+            <l7:Type>CLUSTER_PROPERTY</l7:Type>
+        </l7:Dependency>
+        <l7:Dependency>
             <l7:Name>abc</l7:Name>
             <l7:Id>7a15bd7b9e57a719afc6b1119aec6d2c</l7:Id>
             <l7:Type>SERVICE</l7:Type>
+            <l7:Dependencies>
+                <l7:Dependency>
+                    <l7:Name>name</l7:Name>
+                    <l7:Id>7a15bd7b9e57a719afc6b1119aec6eb1</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                </l7:Dependency>
+            </l7:Dependencies>
         </l7:Dependency>
         <l7:Dependency>
             <l7:Name>Warehouse</l7:Name>
