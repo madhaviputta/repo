@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:JDBCConnection xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="9472d00a1c20fe33f97303e5667016d0" version="3">
+    <l7:Name>Copyofmssql</l7:Name>
+    <l7:Enabled>true</l7:Enabled>
+    <l7:Properties>
+        <l7:Property key="maximumPoolSize">
+            <l7:IntegerValue>15</l7:IntegerValue>
+        </l7:Property>
+        <l7:Property key="minimumPoolSize">
+            <l7:IntegerValue>3</l7:IntegerValue>
+        </l7:Property>
+    </l7:Properties>
+    <l7:Extension>
+        <l7:DriverClass>com.l7tech.jdbc.sqlserver.SQLServerDriver</l7:DriverClass>
+        <l7:JdbcUrl>jdbc:l7tech:sqlserver://192.168.46.89:1433;databaseName=PamDb</l7:JdbcUrl>
+        <l7:ConnectionProperties>
+            <l7:Property key="EnableCancelTimeout">
+                <l7:StringValue>true</l7:StringValue>
+            </l7:Property>
+            <l7:Property key="password">
+                <l7:StringValue bundleKey="$L7C2$1bead,Q9vgsEhpysq2zCIm41bhXGu/i+uOOJgwuGKNa9erEbQ=$NXD9MGnDT7VRDy00nt9YPnyt2eGCavUpDOTwU8Q7ivCbyo9ceNHTtRhX/KS8KFkdwDU0gzMEOvjOx4AnejuQXU588kvFI93SdbG6GnEeNsRfgNHRIkw3uOUv+p/i1Q2Y">$L7C2$1,gAgpdSehIgMFonjy7MB4sE4mq86nbUSGlTY2iDixX5Q=$EB260QIzW0j1hs5UvQ5V3M/cXWLNZhZwdX/5mQ6cUEnsHOzW/2myZIiDXFJh16v/Xl1R7592yOKo/3uKp5+LJQ==</l7:StringValue>
+            </l7:Property>
+            <l7:Property key="user">
+                <l7:StringValue>sashvghvg</l7:StringValue>
+            </l7:Property>
+        </l7:ConnectionProperties>
+    </l7:Extension>
+</l7:JDBCConnection>

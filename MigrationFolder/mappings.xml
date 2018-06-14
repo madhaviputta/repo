@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Mappings xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://api3.gateway.com:8443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
+        <l7:Properties>
+            <l7:Property key="FailOnNew">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="2dfe56105b81030041ad83a26c618aba" srcUri="https://api3.gateway.com:8443/restman/1.0/folders/2dfe56105b81030041ad83a26c618aba" type="FOLDER"/>
+    <l7:Mapping action="NewOrExisting" srcId="9f8d97b6b83aaef9583e96a25f087315" srcUri="https://api3.gateway.com:8443/restman/1.0/jdbcConnections/9f8d97b6b83aaef9583e96a25f087315" type="JDBC_CONNECTION"/>
+    <l7:Mapping action="NewOrExisting" srcId="9472d00a1c20fe33f97303e5667016d0" srcUri="https://api3.gateway.com:8443/restman/1.0/jdbcConnections/9472d00a1c20fe33f97303e5667016d0" type="JDBC_CONNECTION"/>
+    <l7:Mapping action="NewOrExisting" srcId="9472d00a1c20fe33f97303e5667004bc" srcUri="https://api3.gateway.com:8443/restman/1.0/clusterProperties/9472d00a1c20fe33f97303e5667004bc" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="9472d00a1c20fe33f97303e5666d171d" srcUri="https://api3.gateway.com:8443/restman/1.0/clusterProperties/9472d00a1c20fe33f97303e5666d171d" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="57cd26c63bfb796ef2e68ac835e920d6" srcUri="https://api3.gateway.com:8443/restman/1.0/clusterProperties/57cd26c63bfb796ef2e68ac835e920d6" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="57cd26c63bfb796ef2e68ac835e8f674" srcUri="https://api3.gateway.com:8443/restman/1.0/services/57cd26c63bfb796ef2e68ac835e8f674" type="SERVICE"/>
+    <l7:Mapping action="NewOrExisting" srcId="8b231ff0409f8931e885cb5aa3f78082" srcUri="https://api3.gateway.com:8443/restman/1.0/services/8b231ff0409f8931e885cb5aa3f78082" type="SERVICE"/>
+</l7:Mappings>
